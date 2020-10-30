@@ -1,24 +1,24 @@
-import * as React from "react"
-import * as System from "../../design-system"
-import { ControlType, PropertyControls } from "framer"
+import * as React from "react";
+import * as System from "../../design-system";
+import { ControlType, PropertyControls } from "framer";
 
 type Props = System.ToggleProps & {
-  width: number
-  height: number
-}
+  width: number;
+  height: number;
+};
 
 type State = {
-  on?: boolean
-}
+  on?: boolean;
+};
 
 export class Toggle extends React.Component<Props, State> {
   state = {
-    on: false
-  }
+    on: false,
+  };
 
   handleClick = () => {
-    this.setState({ on: !this.state.on })
-  }
+    this.setState({ on: !this.state.on });
+  };
 
   render() {
     return (
@@ -27,16 +27,16 @@ export class Toggle extends React.Component<Props, State> {
         on={this.state.on}
         onClick={this.handleClick}
       />
-    )
+    );
   }
 
   static defaultProps: Props = {
     width: 64,
     height: 36,
-    disabled: false
-  }
+    disabled: false,
+  };
 
   static propertyControls: PropertyControls<Props> = {
-    disabled: { type: ControlType.Boolean, title: "Disabled" }
-  }
+    disabled: { type: ControlType.Boolean, title: "Disabled" },
+  };
 }
