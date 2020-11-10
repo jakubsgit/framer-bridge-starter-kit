@@ -10,10 +10,15 @@
   "author": "Framer",
   "license": "MIT",
   "dependencies": {
+    "classnames": "^2.2.6",
     "framer": "^1.2.9",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "reactstrap": "^8.6.0",
     "styled-components": "^4.2.0",
     "typescript": "^3.4.3"
+  },
+  "devDependencies": {
+    "framer-cli": "^1.8.0"
   }
 }
